@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+
 class MyTool: UIView {
     func isInArea(point: CGPoint) -> Bool {
         let dx = Double(self.center.x - point.x)
