@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FileCellView" customModule="PictureTapLogger"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="TopLeft" id="iN0-l3-epB" customClass="FileCellView" customModule="PictureTapLogger">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="103"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1p0-dZ-CNE">
+                    <rect key="frame" x="9" y="13.666666666666664" width="66" height="68"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1p0-dZ-CNE" secondAttribute="height" multiplier="119:128" id="PFj-sR-4Dy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXf-Ev-0Bb">
+                    <rect key="frame" x="92" y="41" width="180" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zg2-Ld-LLS">
+                    <rect key="frame" x="336" y="41" width="48" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1p0-dZ-CNE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="IxX-v4-fvB"/>
+                <constraint firstItem="zg2-Ld-LLS" firstAttribute="leading" secondItem="pXf-Ev-0Bb" secondAttribute="trailing" constant="64" id="YQs-T5-wAz"/>
+                <constraint firstAttribute="bottom" secondItem="1p0-dZ-CNE" secondAttribute="bottom" constant="20" symbolic="YES" id="h7c-ab-ptI"/>
+                <constraint firstItem="pXf-Ev-0Bb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kbF-NX-NuJ"/>
+                <constraint firstItem="pXf-Ev-0Bb" firstAttribute="leading" secondItem="1p0-dZ-CNE" secondAttribute="trailing" constant="17" id="lI8-G8-acj"/>
+                <constraint firstItem="pXf-Ev-0Bb" firstAttribute="baseline" secondItem="zg2-Ld-LLS" secondAttribute="baseline" id="lyH-Of-ASD"/>
+                <constraint firstItem="1p0-dZ-CNE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="9" id="yNy-4e-EnT"/>
+                <constraint firstAttribute="trailing" secondItem="zg2-Ld-LLS" secondAttribute="trailing" constant="9" id="ym2-4P-yPk"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="DirSign" destination="zg2-Ld-LLS" id="2FM-Hb-xfC"/>
+                <outlet property="FileName" destination="pXf-Ev-0Bb" id="wtV-nG-l0C"/>
+                <outlet property="sampleImage" destination="1p0-dZ-CNE" id="dIw-UJ-or8"/>
+            </connections>
+            <point key="canvasLocation" x="58.778625954198468" y="210.21126760563382"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="96"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

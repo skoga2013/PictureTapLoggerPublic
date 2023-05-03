@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54E260B397E298A5B31BE1A8 /* Pods_PictureTapLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835F6829A168F1E6EFCFC8AA /* Pods_PictureTapLogger.framework */; };
+		CB50129729CC952400506483 /* SettingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50129629CC952400506483 /* SettingCellView.swift */; };
+		CB50129929CCB78D00506483 /* SettingCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB50129829CCB78D00506483 /* SettingCellView.xib */; };
+		CB5012A129D4683600506483 /* FileCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5012A029D4683600506483 /* FileCellView.xib */; };
+		CB5012A329D468B700506483 /* FileCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5012A229D468B700506483 /* FileCellView.swift */; };
+		CB5012A529D48D4400506483 /* FileUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5012A429D48D4400506483 /* FileUtility.swift */; };
+		CB5012A729D6FE0E00506483 /* Folder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB5012A629D6FE0D00506483 /* Folder.jpg */; };
+		CB5012A929D6FF3300506483 /* Folder.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5012A829D6FF3300506483 /* Folder.png */; };
+		CB5012AB29D863A500506483 /* Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5012AA29D863A500506483 /* Arrow.png */; };
+		CB5012AD29D8663100506483 /* MyNeedle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5012AC29D8663100506483 /* MyNeedle.swift */; };
+		CB5012AF29D86FDC00506483 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5012AE29D86FDC00506483 /* LocationManager.swift */; };
+		CB5012B129D870AC00506483 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5012B029D870AC00506483 /* CoreLocation.framework */; };
+		CB5012B329D9100500506483 /* NeedleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5012B229D9100500506483 /* NeedleView.swift */; };
+		CB5012B529D962C100506483 /* MyArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5012B429D962C100506483 /* MyArrow.swift */; };
+		CB5270FA29E2F5DF006279B9 /* MyBeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5270F929E2F5DF006279B9 /* MyBeam.swift */; };
+		CB5270FC29E8421E006279B9 /* MyNorth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5270FB29E8421E006279B9 /* MyNorth.swift */; };
+		CB69ECEC29BD5FD5004632FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ECEB29BD5FD5004632FE /* AppDelegate.swift */; };
+		CB69ECEE29BD5FD5004632FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ECED29BD5FD5004632FE /* SceneDelegate.swift */; };
+		CB69ECF329BD5FD5004632FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB69ECF129BD5FD5004632FE /* Main.storyboard */; };
+		CB69ECF529BD5FD7004632FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB69ECF429BD5FD7004632FE /* Assets.xcassets */; };
+		CB69ECF829BD5FD7004632FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB69ECF629BD5FD7004632FE /* LaunchScreen.storyboard */; };
+		CB69ED2929BDF1AB004632FE /* MyPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED1B29BDF1AA004632FE /* MyPoint.swift */; };
+		CB69ED2A29BDF1AB004632FE /* MyMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED1C29BDF1AA004632FE /* MyMarker.swift */; };
+		CB69ED2B29BDF1AB004632FE /* MyLandmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED1D29BDF1AA004632FE /* MyLandmark.swift */; };
+		CB69ED2C29BDF1AB004632FE /* MyStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED1E29BDF1AA004632FE /* MyStart.swift */; };
+		CB69ED2D29BDF1AB004632FE /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED1F29BDF1AA004632FE /* LogViewController.swift */; };
+		CB69ED2E29BDF1AB004632FE /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED2029BDF1AA004632FE /* MyView.swift */; };
+		CB69ED2F29BDF1AB004632FE /* MyTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED2129BDF1AA004632FE /* MyTool.swift */; };
+		CB69ED3029BDF1AB004632FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED2229BDF1AA004632FE /* ViewController.swift */; };
+		CB69ED3129BDF1AB004632FE /* MyUndo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED2329BDF1AA004632FE /* MyUndo.swift */; };
+		CB69ED3229BDF1AB004632FE /* ClossCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED2429BDF1AA004632FE /* ClossCheck.swift */; };
+		CB69ED3329BDF1AB004632FE /* MySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED2529BDF1AB004632FE /* MySymbol.swift */; };
+		CB69ED3429BDF1AB004632FE /* MyRedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED2629BDF1AB004632FE /* MyRedo.swift */; };
+		CB69ED3529BDF1AB004632FE /* MyDust.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED2729BDF1AB004632FE /* MyDust.swift */; };
+		CB69ED3629BDF1AB004632FE /* RoutePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED2829BDF1AB004632FE /* RoutePoint.swift */; };
+		CB69ED4229BDF2B2004632FE /* Redo64.png in Resources */ = {isa = PBXBuildFile; fileRef = CB69ED3829BDF2B2004632FE /* Redo64.png */; };
+		CB69ED4429BDF2B2004632FE /* ゴミ箱64.png in Resources */ = {isa = PBXBuildFile; fileRef = CB69ED3A29BDF2B2004632FE /* ゴミ箱64.png */; };
+		CB69ED4629BDF2B2004632FE /* Symbol64.png in Resources */ = {isa = PBXBuildFile; fileRef = CB69ED3C29BDF2B2004632FE /* Symbol64.png */; };
+		CB69ED4A29BDF2B2004632FE /* Undo64.png in Resources */ = {isa = PBXBuildFile; fileRef = CB69ED4029BDF2B2004632FE /* Undo64.png */; };
+		CB69ED4B29BDF2B2004632FE /* S64.png in Resources */ = {isa = PBXBuildFile; fileRef = CB69ED4129BDF2B2004632FE /* S64.png */; };
+		CB69ED4F29BFE27E004632FE /* RfdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69ED4E29BFE27E004632FE /* RfdViewController.swift */; };
+		CB76ABF829DF1DFE003C9BF9 /* Overhead2.png in Resources */ = {isa = PBXBuildFile; fileRef = CB76ABF729DF1DFE003C9BF9 /* Overhead2.png */; };
+		CB76ABFC29E1AC3C003C9BF9 /* MyArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76ABFB29E1AC3C003C9BF9 /* MyArea.swift */; };
+		CB86AC3D29C0BB1400BDBDCE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AC3C29C0BB1400BDBDCE /* SettingViewController.swift */; };
+		CB86AC3F29C22FBF00BDBDCE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AC3E29C22FBF00BDBDCE /* Profile.swift */; };
+		CB86AC4129C4BDC500BDBDCE /* Floor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AC4029C4BDC500BDBDCE /* Floor.swift */; };
+		CB86AC4329C4C3C600BDBDCE /* MakeIniFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86AC4229C4C3C600BDBDCE /* MakeIniFile.swift */; };
+		CB8E796F29FE9C080028EF06 /* MyNorthHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8E796E29FE9C080028EF06 /* MyNorthHead.swift */; };
+		CBA90C9D29EA1E2A0039CBB5 /* CompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA90C9C29EA1E2A0039CBB5 /* CompassViewController.swift */; };
+		CBA90C9F29EA700D0039CBB5 /* MyCompass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA90C9E29EA700D0039CBB5 /* MyCompass.swift */; };
+		CBF8022029DEEF0700F5AFE5 /* Overhead.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF8021F29DEEF0700F5AFE5 /* Overhead.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		835F6829A168F1E6EFCFC8AA /* Pods_PictureTapLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PictureTapLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB50129629CC952400506483 /* SettingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCellView.swift; sourceTree = "<group>"; };
+		CB50129829CCB78D00506483 /* SettingCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCellView.xib; sourceTree = "<group>"; };
+		CB5012A029D4683600506483 /* FileCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FileCellView.xib; sourceTree = "<group>"; };
+		CB5012A229D468B700506483 /* FileCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCellView.swift; sourceTree = "<group>"; };
+		CB5012A429D48D4400506483 /* FileUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtility.swift; sourceTree = "<group>"; };
+		CB5012A629D6FE0D00506483 /* Folder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Folder.jpg; sourceTree = "<group>"; };
+		CB5012A829D6FF3300506483 /* Folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder.png; sourceTree = "<group>"; };
+		CB5012AA29D863A500506483 /* Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow.png; sourceTree = "<group>"; };
+		CB5012AC29D8663100506483 /* MyNeedle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNeedle.swift; sourceTree = "<group>"; };
+		CB5012AE29D86FDC00506483 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CB5012B029D870AC00506483 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CB5012B229D9100500506483 /* NeedleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleView.swift; sourceTree = "<group>"; };
+		CB5012B429D962C100506483 /* MyArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArrow.swift; sourceTree = "<group>"; };
+		CB5270F929E2F5DF006279B9 /* MyBeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBeam.swift; sourceTree = "<group>"; };
+		CB5270FB29E8421E006279B9 /* MyNorth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNorth.swift; sourceTree = "<group>"; };
+		CB69ECE829BD5FD5004632FE /* PictureTapLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureTapLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB69ECEB29BD5FD5004632FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB69ECED29BD5FD5004632FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CB69ECF229BD5FD5004632FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB69ECF429BD5FD7004632FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB69ECF729BD5FD7004632FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB69ECF929BD5FD7004632FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB69ED1B29BDF1AA004632FE /* MyPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPoint.swift; sourceTree = "<group>"; };
+		CB69ED1C29BDF1AA004632FE /* MyMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMarker.swift; sourceTree = "<group>"; };
+		CB69ED1D29BDF1AA004632FE /* MyLandmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLandmark.swift; sourceTree = "<group>"; };
+		CB69ED1E29BDF1AA004632FE /* MyStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStart.swift; sourceTree = "<group>"; };
+		CB69ED1F29BDF1AA004632FE /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		CB69ED2029BDF1AA004632FE /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		CB69ED2129BDF1AA004632FE /* MyTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTool.swift; sourceTree = "<group>"; };
+		CB69ED2229BDF1AA004632FE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB69ED2329BDF1AA004632FE /* MyUndo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUndo.swift; sourceTree = "<group>"; };
+		CB69ED2429BDF1AA004632FE /* ClossCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClossCheck.swift; sourceTree = "<group>"; };
+		CB69ED2529BDF1AB004632FE /* MySymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySymbol.swift; sourceTree = "<group>"; };
+		CB69ED2629BDF1AB004632FE /* MyRedo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRedo.swift; sourceTree = "<group>"; };
+		CB69ED2729BDF1AB004632FE /* MyDust.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDust.swift; sourceTree = "<group>"; };
+		CB69ED2829BDF1AB004632FE /* RoutePoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePoint.swift; sourceTree = "<group>"; };
+		CB69ED3829BDF2B2004632FE /* Redo64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Redo64.png; sourceTree = "<group>"; };
+		CB69ED3A29BDF2B2004632FE /* ゴミ箱64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ゴミ箱64.png"; sourceTree = "<group>"; };
+		CB69ED3C29BDF2B2004632FE /* Symbol64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Symbol64.png; sourceTree = "<group>"; };
+		CB69ED4029BDF2B2004632FE /* Undo64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Undo64.png; sourceTree = "<group>"; };
+		CB69ED4129BDF2B2004632FE /* S64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = S64.png; sourceTree = "<group>"; };
+		CB69ED4E29BFE27E004632FE /* RfdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RfdViewController.swift; sourceTree = "<group>"; };
+		CB76ABF729DF1DFE003C9BF9 /* Overhead2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Overhead2.png; sourceTree = "<group>"; };
+		CB76ABFB29E1AC3C003C9BF9 /* MyArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArea.swift; sourceTree = "<group>"; };
+		CB86AC3C29C0BB1400BDBDCE /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		CB86AC3E29C22FBF00BDBDCE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		CB86AC4029C4BDC500BDBDCE /* Floor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floor.swift; sourceTree = "<group>"; };
+		CB86AC4229C4C3C600BDBDCE /* MakeIniFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeIniFile.swift; sourceTree = "<group>"; };
+		CB8E796E29FE9C080028EF06 /* MyNorthHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNorthHead.swift; sourceTree = "<group>"; };
+		CBA90C9C29EA1E2A0039CBB5 /* CompassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassViewController.swift; sourceTree = "<group>"; };
+		CBA90C9E29EA700D0039CBB5 /* MyCompass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCompass.swift; sourceTree = "<group>"; };
+		CBF8021F29DEEF0700F5AFE5 /* Overhead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Overhead.png; sourceTree = "<group>"; };
+		D08D9B32491CD78EC47A88C9 /* Pods-PictureTapLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictureTapLogger.debug.xcconfig"; path = "Target Support Files/Pods-PictureTapLogger/Pods-PictureTapLogger.debug.xcconfig"; sourceTree = "<group>"; };
+		ED4A188073FCA07ED5FBE2FF /* Pods-PictureTapLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictureTapLogger.release.xcconfig"; path = "Target Support Files/Pods-PictureTapLogger/Pods-PictureTapLogger.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB69ECE529BD5FD5004632FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5012B129D870AC00506483 /* CoreLocation.framework in Frameworks */,
+				54E260B397E298A5B31BE1A8 /* Pods_PictureTapLogger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29C70CA780E6064E1222F523 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D08D9B32491CD78EC47A88C9 /* Pods-PictureTapLogger.debug.xcconfig */,
+				ED4A188073FCA07ED5FBE2FF /* Pods-PictureTapLogger.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB69ECDF29BD5FD5004632FE = {
+			isa = PBXGroup;
+			children = (
+				CB69ECEA29BD5FD5004632FE /* PictureTapLogger */,
+				CB69ECE929BD5FD5004632FE /* Products */,
+				29C70CA780E6064E1222F523 /* Pods */,
+				CF22F0AFE6C2A61D30FF96A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB69ECE929BD5FD5004632FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB69ECE829BD5FD5004632FE /* PictureTapLogger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB69ECEA29BD5FD5004632FE /* PictureTapLogger */ = {
+			isa = PBXGroup;
+			children = (
+				CB69ECEB29BD5FD5004632FE /* AppDelegate.swift */,
+				CB69ECED29BD5FD5004632FE /* SceneDelegate.swift */,
+				CB69ECF429BD5FD7004632FE /* Assets.xcassets */,
+				CB69ECF629BD5FD7004632FE /* LaunchScreen.storyboard */,
+				CB69ECF129BD5FD5004632FE /* Main.storyboard */,
+				CB69ECF929BD5FD7004632FE /* Info.plist */,
+				CB76AC0129E1B6F8003C9BF9 /* LogViewController */,
+				CB76ABFD29E1AE8E003C9BF9 /* Tool */,
+				CB69ED3729BDF288004632FE /* Images */,
+				CB76AC0029E1B685003C9BF9 /* SettingViewController */,
+				CB76ABFE29E1B4BB003C9BF9 /* ViewController */,
+				CB76ABFF29E1B60B003C9BF9 /* RfdViewController */,
+			);
+			path = PictureTapLogger;
+			sourceTree = "<group>";
+		};
+		CB69ED3729BDF288004632FE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CB76ABF729DF1DFE003C9BF9 /* Overhead2.png */,
+				CBF8021F29DEEF0700F5AFE5 /* Overhead.png */,
+				CB5012AA29D863A500506483 /* Arrow.png */,
+				CB5012A829D6FF3300506483 /* Folder.png */,
+				CB5012A629D6FE0D00506483 /* Folder.jpg */,
+				CB69ED3829BDF2B2004632FE /* Redo64.png */,
+				CB69ED4129BDF2B2004632FE /* S64.png */,
+				CB69ED3C29BDF2B2004632FE /* Symbol64.png */,
+				CB69ED4029BDF2B2004632FE /* Undo64.png */,
+				CB69ED3A29BDF2B2004632FE /* ゴミ箱64.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		CB76ABFD29E1AE8E003C9BF9 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CB69ED2129BDF1AA004632FE /* MyTool.swift */,
+				CB69ED2329BDF1AA004632FE /* MyUndo.swift */,
+				CB69ED2629BDF1AB004632FE /* MyRedo.swift */,
+				CB69ED2729BDF1AB004632FE /* MyDust.swift */,
+				CB69ED1E29BDF1AA004632FE /* MyStart.swift */,
+				CB5012AC29D8663100506483 /* MyNeedle.swift */,
+				CB5012B429D962C100506483 /* MyArrow.swift */,
+				CB86AC3E29C22FBF00BDBDCE /* Profile.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		CB76ABFE29E1B4BB003C9BF9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB69ED2229BDF1AA004632FE /* ViewController.swift */,
+				CB69ED2029BDF1AA004632FE /* MyView.swift */,
+				CB69ED2429BDF1AA004632FE /* ClossCheck.swift */,
+				CB76ABFB29E1AC3C003C9BF9 /* MyArea.swift */,
+				CB69ED1D29BDF1AA004632FE /* MyLandmark.swift */,
+				CB69ED1C29BDF1AA004632FE /* MyMarker.swift */,
+				CB69ED1B29BDF1AA004632FE /* MyPoint.swift */,
+				CB69ED2529BDF1AB004632FE /* MySymbol.swift */,
+				CB69ED2829BDF1AB004632FE /* RoutePoint.swift */,
+				CB5012AE29D86FDC00506483 /* LocationManager.swift */,
+				CB5270F929E2F5DF006279B9 /* MyBeam.swift */,
+				CB5270FB29E8421E006279B9 /* MyNorth.swift */,
+				CBA90C9B29EA1D9C0039CBB5 /* CompassViewCntroller */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CB76ABFF29E1B60B003C9BF9 /* RfdViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB69ED4E29BFE27E004632FE /* RfdViewController.swift */,
+				CB86AC4029C4BDC500BDBDCE /* Floor.swift */,
+				CB5012A029D4683600506483 /* FileCellView.xib */,
+				CB5012A229D468B700506483 /* FileCellView.swift */,
+				CB5012A429D48D4400506483 /* FileUtility.swift */,
+				CB86AC4229C4C3C600BDBDCE /* MakeIniFile.swift */,
+			);
+			path = RfdViewController;
+			sourceTree = "<group>";
+		};
+		CB76AC0029E1B685003C9BF9 /* SettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB86AC3C29C0BB1400BDBDCE /* SettingViewController.swift */,
+				CB50129629CC952400506483 /* SettingCellView.swift */,
+				CB50129829CCB78D00506483 /* SettingCellView.xib */,
+			);
+			path = SettingViewController;
+			sourceTree = "<group>";
+		};
+		CB76AC0129E1B6F8003C9BF9 /* LogViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB69ED1F29BDF1AA004632FE /* LogViewController.swift */,
+			);
+			path = LogViewController;
+			sourceTree = "<group>";
+		};
+		CBA90C9B29EA1D9C0039CBB5 /* CompassViewCntroller */ = {
+			isa = PBXGroup;
+			children = (
+				CB5012B229D9100500506483 /* NeedleView.swift */,
+				CBA90C9C29EA1E2A0039CBB5 /* CompassViewController.swift */,
+				CBA90C9E29EA700D0039CBB5 /* MyCompass.swift */,
+				CB8E796E29FE9C080028EF06 /* MyNorthHead.swift */,
+			);
+			path = CompassViewCntroller;
+			sourceTree = "<group>";
+		};
+		CF22F0AFE6C2A61D30FF96A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB5012B029D870AC00506483 /* CoreLocation.framework */,
+				835F6829A168F1E6EFCFC8AA /* Pods_PictureTapLogger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB69ECE729BD5FD5004632FE /* PictureTapLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB69ECFC29BD5FD7004632FE /* Build configuration list for PBXNativeTarget "PictureTapLogger" */;
+			buildPhases = (
+				DDED37AE564AB028EF3F49AD /* [CP] Check Pods Manifest.lock */,
+				CB69ECE429BD5FD5004632FE /* Sources */,
+				CB69ECE529BD5FD5004632FE /* Frameworks */,
+				CB69ECE629BD5FD5004632FE /* Resources */,
+				A7422C8CFB3398B591369312 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PictureTapLogger;
+			productName = PictureTapLogger;
+			productReference = CB69ECE829BD5FD5004632FE /* PictureTapLogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB69ECE029BD5FD5004632FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CB69ECE729BD5FD5004632FE = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = CB69ECE329BD5FD5004632FE /* Build configuration list for PBXProject "PictureTapLogger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB69ECDF29BD5FD5004632FE;
+			productRefGroup = CB69ECE929BD5FD5004632FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB69ECE729BD5FD5004632FE /* PictureTapLogger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB69ECE629BD5FD5004632FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB76ABF829DF1DFE003C9BF9 /* Overhead2.png in Resources */,
+				CB69ECF829BD5FD7004632FE /* LaunchScreen.storyboard in Resources */,
+				CB5012AB29D863A500506483 /* Arrow.png in Resources */,
+				CB5012A729D6FE0E00506483 /* Folder.jpg in Resources */,
+				CB5012A929D6FF3300506483 /* Folder.png in Resources */,
+				CB69ED4229BDF2B2004632FE /* Redo64.png in Resources */,
+				CB69ED4B29BDF2B2004632FE /* S64.png in Resources */,
+				CB69ECF529BD5FD7004632FE /* Assets.xcassets in Resources */,
+				CB50129929CCB78D00506483 /* SettingCellView.xib in Resources */,
+				CB69ECF329BD5FD5004632FE /* Main.storyboard in Resources */,
+				CB69ED4429BDF2B2004632FE /* ゴミ箱64.png in Resources */,
+				CB69ED4629BDF2B2004632FE /* Symbol64.png in Resources */,
+				CB69ED4A29BDF2B2004632FE /* Undo64.png in Resources */,
+				CB5012A129D4683600506483 /* FileCellView.xib in Resources */,
+				CBF8022029DEEF0700F5AFE5 /* Overhead.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7422C8CFB3398B591369312 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PictureTapLogger/Pods-PictureTapLogger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PictureTapLogger/Pods-PictureTapLogger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PictureTapLogger/Pods-PictureTapLogger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDED37AE564AB028EF3F49AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PictureTapLogger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB69ECE429BD5FD5004632FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5012A529D48D4400506483 /* FileUtility.swift in Sources */,
+				CB69ED4F29BFE27E004632FE /* RfdViewController.swift in Sources */,
+				CB5012AD29D8663100506483 /* MyNeedle.swift in Sources */,
+				CB50129729CC952400506483 /* SettingCellView.swift in Sources */,
+				CB69ED3029BDF1AB004632FE /* ViewController.swift in Sources */,
+				CB69ED3229BDF1AB004632FE /* ClossCheck.swift in Sources */,
+				CB5012B529D962C100506483 /* MyArrow.swift in Sources */,
+				CB5270FC29E8421E006279B9 /* MyNorth.swift in Sources */,
+				CB5012A329D468B700506483 /* FileCellView.swift in Sources */,
+				CB69ED2E29BDF1AB004632FE /* MyView.swift in Sources */,
+				CB69ED2C29BDF1AB004632FE /* MyStart.swift in Sources */,
+				CBA90C9D29EA1E2A0039CBB5 /* CompassViewController.swift in Sources */,
+				CB86AC3D29C0BB1400BDBDCE /* SettingViewController.swift in Sources */,
+				CB69ED3629BDF1AB004632FE /* RoutePoint.swift in Sources */,
+				CB69ECEC29BD5FD5004632FE /* AppDelegate.swift in Sources */,
+				CB8E796F29FE9C080028EF06 /* MyNorthHead.swift in Sources */,
+				CB5012AF29D86FDC00506483 /* LocationManager.swift in Sources */,
+				CB5270FA29E2F5DF006279B9 /* MyBeam.swift in Sources */,
+				CB69ED2A29BDF1AB004632FE /* MyMarker.swift in Sources */,
+				CB69ED2B29BDF1AB004632FE /* MyLandmark.swift in Sources */,
+				CBA90C9F29EA700D0039CBB5 /* MyCompass.swift in Sources */,
+				CB69ED2F29BDF1AB004632FE /* MyTool.swift in Sources */,
+				CB69ECEE29BD5FD5004632FE /* SceneDelegate.swift in Sources */,
+				CB86AC4129C4BDC500BDBDCE /* Floor.swift in Sources */,
+				CB76ABFC29E1AC3C003C9BF9 /* MyArea.swift in Sources */,
+				CB69ED3329BDF1AB004632FE /* MySymbol.swift in Sources */,
+				CB69ED2D29BDF1AB004632FE /* LogViewController.swift in Sources */,
+				CB69ED3129BDF1AB004632FE /* MyUndo.swift in Sources */,
+				CB69ED2929BDF1AB004632FE /* MyPoint.swift in Sources */,
+				CB86AC3F29C22FBF00BDBDCE /* Profile.swift in Sources */,
+				CB69ED3529BDF1AB004632FE /* MyDust.swift in Sources */,
+				CB5012B329D9100500506483 /* NeedleView.swift in Sources */,
+				CB86AC4329C4C3C600BDBDCE /* MakeIniFile.swift in Sources */,
+				CB69ED3429BDF1AB004632FE /* MyRedo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB69ECF129BD5FD5004632FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB69ECF229BD5FD5004632FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB69ECF629BD5FD7004632FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB69ECF729BD5FD7004632FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB69ECFA29BD5FD7004632FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB69ECFB29BD5FD7004632FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB69ECFD29BD5FD7004632FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D08D9B32491CD78EC47A88C9 /* Pods-PictureTapLogger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = 2YHTSZRW43;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PictureTapLogger/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "写真を撮るのに許可が必要です。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kogagarage.PictureTapLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB69ECFE29BD5FD7004632FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED4A188073FCA07ED5FBE2FF /* Pods-PictureTapLogger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = 2YHTSZRW43;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PictureTapLogger/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "写真を撮るのに許可が必要です。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kogagarage.PictureTapLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB69ECE329BD5FD5004632FE /* Build configuration list for PBXProject "PictureTapLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB69ECFA29BD5FD7004632FE /* Debug */,
+				CB69ECFB29BD5FD7004632FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB69ECFC29BD5FD7004632FE /* Build configuration list for PBXNativeTarget "PictureTapLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB69ECFD29BD5FD7004632FE /* Debug */,
+				CB69ECFE29BD5FD7004632FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB69ECE029BD5FD5004632FE /* Project object */;
+}
